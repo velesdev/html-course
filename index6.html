@@ -1,0 +1,525 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>html-course | page 6</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+<header class="header">
+    <div class="container">
+        <h1 class="title h1">HTML-course</h1>
+        <nav>
+            <ul class="menu container">
+                <li class="menu__item">
+                    <a class="menu__item-link" href="./index.html">На начало</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__item-link" href="./index2.html">2-я страница</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__item-link" href="./index3.html">3-я страница</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__item-link" href="./index4.html">4-я страница</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__item-link" href="./index5.html">5-я страница</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__item-link" href="./index6.html">6-я страница</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__item-link" href="./index7.html">7-я страница</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</header>
+<main class="main">
+    <div class="container">
+        <div class="item">
+            <h2 class="item__title">HTML формы. Тег form</h2>
+            <form action="/some-server-script-path" method="post">
+
+            </form>
+
+            <pre>
+                <code>
+                    &lt;form action="/some-server-script-path" method="post"&gt;
+
+                    &lt;/form&gt;
+                </code>
+            </pre>
+        </div>
+        <div class="item">
+            <h2 class="item__title">HTML формы. Тег fieldset</h2>
+            <form action="/some-server-script-path" method="post">
+                <fieldset>Группа полей ввода</fieldset>
+                <fieldset>Еще одна группа полей ввода</fieldset>
+                <fieldset>И еще одна группа полей ввода</fieldset>
+            </form>
+        </div>
+        <div class="item">
+            <h2 class="item__title">HTML формы. Тег legend</h2>
+            <form action="/some-server-script-path" method="post">
+                <fieldset>
+                    <legend>Группа полей ввода</legend>
+                </fieldset>
+                <fieldset>
+                    <legend>Еще одна группа полей ввода</legend>
+                </fieldset>
+                <fieldset>
+                    <legend>И еще одна группа полей ввода</legend>
+                </fieldset>
+            </form>
+        </div>
+        <div class="item">
+            <h2 class="item__title">HTML формы. Тег label</h2>
+            <form action="/some-server-script-path" method="post">
+                <label for="field">Логин:</label>
+                <input type="text" name="field" id="field">
+            </form>
+        </div>
+        <div class="item">
+            <h2 class="item__title">HTML формы. Тег input</h2>
+            <form action="/some-server-script-path" method="post">
+                <div><label for="month">Месяц:</label>
+                    <input type="month" name="field" id="month"></div>
+                <div><label for="week">Неделя:</label>
+                    <input type="week" name="field" id="week"></div>
+                <div><label for="date">Дата:</label>
+                    <input type="date" name="field" id="date"></div>
+                <div><label for="time">Время:</label>
+                    <input type="time" name="field" id="time"></div>
+                <div><label for="color">Цвет:</label>
+                    <input type="color" name="field" id="color"></div>
+                <div><label for="color">Image:</label>
+                    <input type="image" name="field" id="image"></div>
+                <div><label for="login">Логин:</label>
+                    <input type="text" name="field" id="login"></div>
+                <div><label for="email">Email:</label>
+                    <input type="email" name="email" id="email"></div>
+                <div><label for="password">password:</label>
+                    <input type="password" name="email" id="password"></div>
+
+            </form>
+        </div>
+        <div class="item">
+            <h2 class="item__title">Атрибут email</h2>
+            <div>
+                <label for="email1">Email:</label>
+                <input type="email" name="email" id="email1">
+                <button type="submit">Отправить</button>
+            </div>
+        </div>
+        <div class="item">
+            <h2 class="item__title">Атрибут url</h2>
+            <div>
+                <label for="user-profile">
+                    Ссылка на профиль в любой соц.сети
+                </label>
+                <input type="url" name="url" id="user-profile">
+                <button type="submit">Отправить</button>
+            </div>
+        </div>
+        <div class="item">
+            <h2 class="item__title">Атрибут tel</h2>
+            <div>
+                <label for="user-phone">
+                    Номер телефона:
+                </label>
+                <input type="tel" name="phone" id="user-phone" placeholder="+7(999)999-99-99">
+                <button type="submit">Отправить</button>
+            </div>
+        </div>
+        <div class="item">
+            <h2 class="item__title">Атрибут search</h2>
+            <div>
+                <label for="search">
+                    Введите поисковый запрос
+                </label>
+                <input type="search" name="search" id="search">
+                <button type="submit">Поиск</button>
+            </div>
+        </div>
+        <div class="item">
+            <h2 class="item__title">Атрибут number</h2>
+            <div>
+                <label for="age">
+                    Введите Ваш возраст
+                </label>
+                <input type="number" name="age" id="age">
+                <button type="submit">Отправить</button>
+            </div>
+        </div>
+        <div class="item">
+            <h2 class="item__title">Атрибут password</h2>
+            <div>
+                <label for="user-password">
+                    Введите пароль
+                </label>
+                <input type="password" name="password" id="user-password">
+                <button type="submit">Отправить</button>
+            </div>
+        </div>
+        <div class="item">
+            <h2 class="item__title">Атрибут datetime</h2>
+            <div>
+                <label for="full-data">
+                    Введите дату в формате: день, месяц, год:
+                </label>
+                <input type="date" name="full-data" id="full-data">
+            </div>
+        </div>
+        <div class="item">
+            <h2 class="item__title">Атрибут datetime-local</h2>
+            <div>
+                <label for="full-data-with-time">
+                    Введите дату в формате: день, месяц, год, время:
+                </label>
+                <input type="datetime-local" name="full-data-with-time" id="full-data-with-time">
+            </div>
+        </div>
+        <div class="item">
+            <h2 class="item__title">Атрибут color</h2>
+            <div>
+                <label for="user-color">
+                    Выберите цвет:
+                </label>
+                <input type="color" name="user-color" id="user-color">
+            </div>
+        </div>
+        <div class="item">
+            <h2 class="item__title">Атрибут file</h2>
+            <div>
+                <label for="user-document">
+                    Прикрепите Ваш документ:
+                </label>
+                <input type="file" name="user-file" id="user-document">
+            </div>
+            <div>
+                <label for="user-documents">
+                    Прикрепите Ваши документы:
+                </label>
+                <input type="file" name="user-file" id="user-documents" multiple>
+            </div>
+            <button type="submit">Отправить</button>
+        </div>
+        <div class="item">
+            <h2 class="item__title">Атрибут checkbox</h2>
+            <div>
+                <input type="checkbox" name="agreement" id="agreement" value="agreement">
+                <label for="agreement">
+                    Я согласен со всеми условиями
+                </label>
+            </div>
+            <div>
+                <input type="checkbox" name="agreement-total" id="agreement-total" value="agreement-total" checked>
+                <label for="agreement-total">
+                    Я точно-точно согласен со всеми условиями
+                </label>
+            </div>
+        </div>
+        <div class="item">
+            <h2 class="item__title">Атрибут type radio</h2>
+            <div>
+                <form action="" method="post">
+                    <fieldset>
+                        <legend>Ваш пол</legend>
+                        <p>
+                            <input type="radio" name="gender" id="male" value="male" checked>
+                            <label for="male">Муж.</label>
+                        </p>
+                        <p>
+                            <input type="radio" name="gender" id="female" value="female">
+                            <label for="female">Жен.</label>
+                        </p>
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+        <div class="item">
+            <h2 class="item__title">Атрибут type range</h2>
+            <label for="sound-volume">
+                Громкость звука от 1 до 100
+            </label>
+            <input type="range" name="sound-volume" id="sound-volume" min="1" max="100"/>
+        </div>
+        <div class="item">
+            <h2 class="item__title">Тег textarea</h2>
+            <div><label for="comment">Ваш комментарий:</label></div>
+            <div><textarea name="comment" id="comment" cols="30" rows="10">Введите ваш комментарий</textarea></div>
+        </div>
+        <div class="item">
+            <h2 class="item__title">Тег select</h2>
+            <div><label for="city">Ваш город:</label></div>
+            <div>
+                <select name="city" id="city">
+                    <option value="Moscow">Москва</option>
+                    <option value="Saint-Petersburg">Санкт-Петербург</option>
+                    <option value="Ekaterinburg">Екатеринбург</option>
+                    <option value="Samara">Самара</option>
+                </select>
+            </div>
+        </div>
+        <div class="item">
+            <h2 class="item__title">Тег select, атрибут multiple</h2>
+            <div><label for="city1">Ваш город:</label></div>
+            <div>
+                <select name="city" id="city1" multiple>
+                    <option value="Moscow">Москва</option>
+                    <option value="Saint-Petersburg">Санкт-Петербург</option>
+                    <option value="Ekaterinburg">Екатеринбург</option>
+                    <option value="Samara">Самара</option>
+                </select>
+            </div>
+        </div>
+        <div class="item">
+            <h2 class="item__title">Тег select, выбранный по умолчанию опции</h2>
+            <div><label for="user-city">Ваш город:</label></div>
+            <div>
+                <select name="city" id="user-city" required>
+                    <option disabled value="" selected>Не выбрано</option>
+                    <option value="Moscow">Москва</option>
+                    <option value="Saint-Petersburg">Санкт-Петербург</option>
+                    <option value="Ekaterinburg">Екатеринбург</option>
+                    <option value="Samara">Самара</option>
+                </select>
+                <button type="submit">Отправить</button>
+            </div>
+        </div>
+        <div class="item">
+            <h2 class="item__title">Тег optgroup</h2>
+            <div><label for="office">Ваш район:</label></div>
+            <div>
+                <select name="city" id="office">
+                    <optgroup label="Центральный район">
+                        <option value="center-1">Москва., Театральный проезд., д.2</option>
+                        <option value="center-2">Москва., ул. Ильинка, д.11 стр. 1</option>
+                        <option value="center-3">Москва., ул. Варварка, д.4</option>
+                    </optgroup>
+                    <optgroup label="Юго-Западный район">
+                        <option value="south-west-1">Москва., Ленинский проспект., д.55 стр 1</option>
+                        <option value="south-west-2">Москва., Проектируемый проезд №6089., д. 19</option>
+                        <option value="south-west-3">Москва., Проспект Вернадского., д.12</option>
+                    </optgroup>
+                </select>
+                <button type="submit">Отправить</button>
+            </div>
+        </div>
+        <div class="item">
+            <h2 class="item__title">Атрибут required</h2>
+            <form>
+                <p>
+                    <label for="login-1">Логин: </label>
+                    <input type="text" name="login" id="login-1" required>
+                </p>
+
+                <p>
+                    <input type="checkbox" name="agreement-1" id="agreement-1">
+                    <label for="agreement-1">Я согласен со всеми условиями</label>
+                </p>
+
+                <p>
+                    <label for="user-home-city">Ваш город:</label>
+
+                    <select name="city" id="user-home-city" required>
+                        <option disabled value="" selected>Не выбрано</option>
+                        <option value="Moscow">Москва</option>
+                        <option value="Saint-Petersburg">Санкт-Петербург</option>
+                        <option value="Ekaterinburg">Екатеринбург</option>
+                        <option value="Samara">Самара</option>
+                    </select>
+
+                </p>
+                <button type="submit">Отправить</button>
+            </form>
+        </div>
+        <div class="item">
+            <h2 class="item__title">Атрибут disabled</h2>
+            <form>
+                <p>
+                    <label for="u-login">Логин:</label>
+                    <input type="text" name="u-login" id="u-login" disabled>
+                </p>
+                <p>
+                    <input type="checkbox" name="u-agreement" id="u-agreement" disabled/>
+                    <label for="u-agreement">Я согласен со всеми условиями</label>
+                </p>
+                <p>
+                    <label for="u-message1">Ваше сообщение:</label>
+                    <textarea name="u-messasge1" id="u-message1" cols="30" rows="10" disabled></textarea>
+                </p>
+                <p>
+                    <label for="u-city">Ваш город:</label>
+                    <select name="u-city" id="u-city" disabled>
+                        <option></option>
+                        <option value="Moscow">Москва</option>
+                        <option value="Samara">Самара</option>
+                        <option value="Ekaterinburg">Екатеринбург</option>
+                    </select>
+                </p>
+                <p>
+                    <label for="u-area">Ваша улица:</label>
+                    <select name="area" id="u-area">
+                        <option value="center-1">Москва., Театральный проезд., д.2</option>
+                        <option value="center-2">Москва., ул. Ильинка, д.11 стр. 1</option>
+                        <option value="center-3">Москва., ул. Варварка, д.4</option>
+                    </select>
+                </p>
+                <fieldset disabled>
+                    <p>
+                        <label for="request-number">Номер обращения:</label>
+                        <input type="text" id="request-number" name="request-number" value="1001">
+                    </p>
+                    <p>
+                        <label for="r-email">Ваш email:</label>
+                        <input type="text" id="r-email" name="r-email" value="vasja-pupkin@mail.com">
+                    </p>
+                </fieldset>
+                <button type="submit" disabled>Отправить</button>
+            </form>
+        </div>
+        <div class="item">
+            <h2 class="item__title">Разница readonly и disabled</h2>
+            <form>
+                <p>
+                    <label for="req-number">Ваш номер обращения:</label>
+                    <input type="text" id="req-number" name="req-number" value="1234-4321" readonly>
+                </p>
+                <p>
+                    <label for="order-number">Ваш номер в очереди:</label>
+                    <input type="text" id="order-number" name="user-order-number" value="5" disabled>
+                </p>
+            </form>
+        </div>
+        <div class="item">
+            <h2 class="item__title">Атрибут inpudmode</h2>
+            <p>
+                Атрибут <b>inputmode</b> говорит браузеру на устройствах с экранной клавиатурой какой набор символов показать при вводе данных в конкретное поле. Указывается для элементов
+                <code>&lt;input&gt;</code> или <code>&lt;textarea&gt;</code>.
+            </p>
+            <p>
+                <label for="u-field-1">Стандартная экранная клавиатура:</label><br>
+                <input type="text" id="u-field-1" name="u-field-1" inputmode="text">
+            </p>
+            <p>
+                <label for="u-field-2">Экранная клавиатура не появится вовсе:</label><br>
+                <input type="text" id="u-field-2" name="u-field-2" inputmode="none">
+            </p>
+            <p>
+                <label for="u-field-3">Экранная клавиатура с цифрами:</label><br>
+                <input type="text" id="u-field-3" name="u-field-3" inputmode="numeric">
+            </p>
+            <p>
+                <label for="u-field-4">Экранная клавиатура с цифрами и разделителем:</label><br>
+                <input type="text" id="u-field-4" name="u-field-4" inputmode="decimal">
+            </p>
+            <p>
+                <label for="u-field-5">Экранная клавиатура для удобного ввода номера телефона:</label><br>
+                <input type="text" id="u-field-5" name="u-field-5" inputmode="tel">
+            </p>
+            <p>
+                <label for="u-field-6">Экранная клавиатура для удобного ввода email:</label><br>
+                <input type="text" id="u-field-6" name="u-field-6" inputmode="email">
+            </p>
+            <p>
+                <label for="u-field-7">Экранная клавиатура для удобного ввода c кнопкой поиска:</label><br>
+                <input type="text" id="u-field-7" name="u-field-7" inputmode="search">
+            </p>
+            <p>
+                <label for="u-field-8">Экранная клавиатура для удобного ввода url:</label><br>
+                <input type="text" id="u-field-8" name="u-field-8" inputmode="url">
+            </p>
+        </div>
+        <div class="item">
+            <h2 class="item__title">Разница inputmode и type</h2>
+            <p>
+                <!--
+                    Экранная клавиатура будет с цифрами, но возможна вставка в поле любых не цифровых значений
+                -->
+                <label for="passport-number-1">Номер паспорта (только цифры)</label>
+                <input id="passport-number-1" name="passport-number-1" inputmode="numeric">
+            </p>
+            <p>
+                <!--
+                    Экранная клавиатура будет только с цифрами, НЕ возможна вставка в поле любых не цифровых значений
+                -->
+                <label for="passport-number-2">Номер паспорта (только цифры)</label>
+                <input type="number" id="passport-number-2" name="passport-number-2">
+            </p>
+        </div>
+        <div class="item">
+            <h2 class="item__title">Атрибут autofocus</h2>
+            <p>
+                Фокусируется на элементе <code>&lt;input /&gt;</code>, сразу после загрузки страницы. Это значит, что пользователю не нужно специально нажимать на этот элемент, чтобы начать в нём что-то писать. В фокусе может быть только один элемент на странице.
+                Применяется не только к полю ввода, но и другим интерактивным элементам.
+            </p>
+            <p>
+                <button>Кнопка 1</button>
+                <button autofocus>Кнопка 2</button>
+            </p>
+        </div>
+        <div class="item">
+            <h2 class="item__title">
+                Атрибут form
+            </h2>
+            <p><code>form</code> — связывает отдельно стоящий элемент <code>&lt;input&gt;</code> с формой. Для этого укажите в качестве значения имя идентификатора, который задан нужному тегу <code>&lt;form&gt;</code>.</p>
+            <p>
+<!--                Поле вне формы -->
+                <label for="o-email">Ваш email</label>
+                <input type="email" id="o-email" name="o-email" form="o-user-information">
+            </p>
+
+            <form id="o-user-information">
+                <p>
+                    <label for="o-user-name">Ваше имя:</label>
+                    <input type="text" id="o-user-name" name="o-user-name">
+                </p>
+                <p>
+                    <button type="submit">Отправить</button>
+                </p>
+            </form>
+        </div>
+        <div class="item">
+            <h2 class="item__title">Атрибут size</h2>
+            <p>Указывает ширину поля для ввода в символах.</p>
+            <p>
+                <label for="s-user-name">Ваше имя:</label>
+                <input type="text" name="s-user-name" id="s-user-name" size="10">
+            </p>
+            <p>
+                <label for="s-full-name">Ваше ФИО:</label>
+                <input type="text" name="s-full-name" id="s-full-name" size="20">
+            </p>
+        </div>
+        <div class="item">
+            <h2 class="item__title">Атрибут pattern</h2>
+            <p>
+                Задаёт регулярное выражение, по которому проверяется значение элемента
+            </p>
+            <h3>Регистрация</h3>
+            <form>
+                <p>
+                    <label for="username">Имя пользователя:</label>
+                    <input type="text"
+                           id="username"
+                           name="username"
+                           pattern="[a-zA-Z]+"
+                           oninvalid="this.setCustomValidity('Только латинские символы')"
+                    >
+                </p>
+                <button type="submit">Отправить</button>
+            </form>
+        </div>
+    </div>
+</main>
+<footer class="footer">
+    <p>Уточнение: в целях экономии места, представим, что каждый квадрат на странице, это "отдельная страница"</p>
+</footer>
+</body>
+</html>

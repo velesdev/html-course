@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>html-course | page 7</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+<header class="header">
+    <div class="container">
+        <h1 class="title h1">HTML-course</h1>
+
+        <nav>
+            <ul class="menu container">
+                <li class="menu__item">
+                    <a class="menu__item-link" href="./index.html">На начало</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__item-link" href="./index2.html">2-я страница</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__item-link" href="./index3.html">3-я страница</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__item-link" href="./index4.html">4-я страница</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__item-link" href="./index5.html">5-я страница</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__item-link" href="./index6.html">6-я страница</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__item-link" href="./index7.html">7-я страница</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</header>
+<main class="main">
+    <div class="container">
+        <h2 style="text-align: center">Глобальные атрибуты HTML - class, id, title, hidden, tabindex, lang и другие</h2>
+        <div class="grid">
+            <div class="item">
+                <h2 class="item__title">Атрибут id</h2>
+                <p id="paragraph-1">Параграф-1</p>
+                <p id="paragraph-2">Параграф-2</p>
+                <p id="paragraph-3">Параграф-3</p>
+                <p>
+                    Важно, чтобы значение идентификатора было уникальным в рамках одной страницы. Позволяет создавать
+                    якоря — ссылки на части страницы, выбирать уникальный элемент при помощи CSS или JavaScript.
+                    Значение: одно слово или набор символов, не может содержать пробелы. Позволяет сделать один из
+                    элементов на странице уникальным.
+                </p>
+
+            </div>
+            <div class="item">
+                <h2 class="item__title">Атрибут title</h2>
+                <p>Позволяет добавить любому элементу подсказку, некую дополнительную информацию. Может, но не
+                    обязательно будет показан пользователю в виде всплывающего окна при задержке курсора над элементом.
+                    Редко используется в реальной практике из-за невозможности стилизовать всплывающий элемент. Плюс
+                    значение этого тега зачитывается не всеми скринридерами, что делает часть информации недоступной для
+                    пользователей с ограниченными возможностями. Не надо так.</p>
+            </div>
+            <div class="item">
+                <h2 class="item__title">Атрибут hidden</h2>
+                <p>
+                    Прячет со страницы любой HTML-элемент. Причём элемент невидим не только для глаз пользователя, но и
+                    для скринридеров.
+                </p>
+                <p>Параграф 1</p>
+                <p hidden>Параграф 2</p>
+                <p>Параграф 3</p>
+            </div>
+            <div class="item">
+                <h2 class="item__title">Атрибут tabindex</h2>
+                <p>
+                    Атрибут <code>tabindex</code> указывает браузеру, нужно ли видеть этот элемент при навигации по
+                    странице с помощью клавиатуры.
+                    Часто используется для неинтерактивных элементов.
+
+                    Значение: отрицательное или положительное целое число. Отрицательное число — элемент может быть
+                    выделен, но не участвует в последовательной цепочке навигации. 0 — элемент включается в цепочку
+                    последовательной навигации, но порядок остаётся на усмотрение браузера. Положительное число —
+                    элемент участвует в последовательной навигации, причём чем больше указанное значение, тем выше
+                    элемент будет в цепочке навигации. Если у нескольких элементов одинаковые значения, то они идут по
+                    порядку следования в HTML.
+                </p>
+                <button
+                        class="button"
+                        type="button"
+                >
+                    Кнопка 1
+                </button>
+                <button
+                        class="button"
+                        type="button"
+                >
+                    Кнопка 2
+                </button>
+                <button
+                        class="button"
+                        type="button"
+                >
+                    Кнопка 3
+                </button>
+                <p tabindex="1">Параграф 1</p>
+                <p tabindex="3">Параграф 2</p>
+                <p tabindex="2">Параграф 3</p>
+                <small>
+                    Для переключения нажмите клавишу <code>Tab</code>
+                </small>
+            </div>
+            <div class="item">
+                <h2 class="item__title">Атрибут lang</h2>
+                <p>
+                    Определяет, на каком языке написан текст внутри элемента, для которого задан этот атрибут. Удобно,
+                    если в вашем тексте есть цитаты или выдержки из документа на другом языке. Подстраивает пунктуацию и
+                    оформление под стандарты указанного языка. Значение: указание языка в формате BCP47
+                </p>
+            </div>
+            <div class="item">
+                <h2 class="item__title">Атрибут contenteditable</h2>
+                <p>
+                    Делает любой элемент на странице редактируемым. В качестве значения для атрибута
+                    <code>contenteditable</code>
+                    используют <code>true</code> или <code>false</code>. А можно записать совсем без значения, тогда
+                    наличие самого атрибута будет
+                    равно <code>contenteditable="true"</code>.
+                </p>
+                <p contenteditable="true">Этот абзац можно редактировать в браузере. Для этого кликните на него</p>
+            </div>
+            <div class="item">
+                <h2 class="item__title">Атрибут spellcheck</h2>
+                <p>
+                    С помощью этого атрибута мы указываем браузеру, что в элементе, которому он задан, нужно проверить
+                    правописание. Значение: <code>true</code> или <code>false</code>.
+                </p>
+            </div>
+            <div class="item">
+                <h2 class="item__title">Атрибут style</h2>
+                <p>
+                    Позволяет прописывать стили прямо внутри HTML-разметки. <code><strong>Внимание: это считается
+                    антипаттерном</strong></code> и
+                    может быть использовано только для проверки гипотез. Значение: любые правила CSS в соответствующем
+                    формате.
+                </p>
+            </div>
+            <div class="item">
+                <h2 class="item__title">Атрибут data-*</h2>
+                <p>
+                    <code>data-*</code> — группа атрибутов, позволяющая перекидывать данные между HTML и DOM. Часто
+                    используется для
+                    взаимодействия с <code>HTML</code> при помощи <code>JavaScript</code>. Если не требуется менять
+                    внешний вид элемента, то это
+                    удобнее, чем передёргивать классы.
+                </p>
+                <input type="text" data-mask="phone" data-region="ru">
+                <p data-tooltip="текст подсказки...">Lorem ipsum dolor sit.</p>
+                <a href="/" data-some-special-link>Lorem ipsum dolor.</a>
+            </div>
+            <div class="item">
+                <h2 class="item__title">Комментарии в коде</h2>
+                <pre>
+                    &lt;!--
+                        Комментарий к разметке кода
+                    --&gt;
+                </pre>
+            </div>
+        </div>
+    </div>
+</main>
+<footer class="footer">
+    <p>Уточнение: в целях экономии места, представим, что каждый квадрат на странице, это "отдельная страница"</p>
+</footer>
+</body>
+</html>

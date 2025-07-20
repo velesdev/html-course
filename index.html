@@ -1,0 +1,286 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>html-course | page 1</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="header">
+    <div class="container">
+        <h1 class="title h1">HTML-course</h1>
+        <nav>
+            <ul class="menu container">
+                <li class="menu__item">
+                    <a class="menu__item-link" href="./index.html">На начало</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__item-link" href="./index2.html">2-я страница</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__item-link" href="./index3.html">3-я страница</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__item-link" href="./index4.html">4-я страница</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__item-link" href="./index5.html">5-я страница</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__item-link" href="./index6.html">6-я страница</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__item-link" href="./index7.html">7-я страница</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</header>
+<main class="main">
+    <div class="container grid">
+
+        <div class="item">
+            <h2 class="item__title">Анатомия одиночного тега</h2>
+            <button>Клик</button>
+            <input placeholder="Ведите имя"/>
+            <a href="https://google.ru">Перейти в Google</a>
+        </div>
+        <div class="item">
+            <h2 class="item__title">Поток документа</h2>
+            <button>Кнопка 1</button>
+            <button>Кнопка 2</button>
+            <a href="/">Ссылка 1</a><a href="/">Ссылка 2</a>
+            <p>Параграф с текстом...</p>
+            <p>Еще один параграф с текстом...</p>
+            <button>Кнопка 3</button>
+        </div>
+        <div class="item">
+            <h2 class="item__title">Понятие вложенности</h2>
+            <article>
+                <div>
+                    <p>Я параграф с текстом</p>
+                    <input/>
+                </div>
+            </article>
+        </div>
+        <div class="item">
+            <h2 class="item__title">Порядок открытия и закрытия тегов</h2>
+            <article>
+                <div>
+                    ...
+                </div>
+            </article>
+        </div>
+        <div class="item">
+            <h2 class="item__title">Атрибуты</h2>
+            <a href="https://dev-sg.ru">Мой личный сайт</a>
+            <input type="text" placeholder="Введите ваше имя" maxlength="30">
+
+            <img src="./images/image.jpg" title="Фронтенд-разработчик сидящий за компьютером"
+                 alt="Фронтенд-разработчик сидящий за компьютером" width="300"/>
+            <button type="submit" disabled>Отправить</button>
+        </div>
+        <div class="item">
+            <h2 class="item__title">Глобальные атрибуты</h2>
+            <div class="some-block">...</div>
+            <a href="/" class="some-link">...</a>
+            <input type="text" class="some-input" placeholder="Введите имя" maxlength="30"/>
+        </div>
+
+        <div class="item">
+            <h2 class="item__title">Блочные и строчные элементы</h2>
+            <p>
+                Параграф с каким-то текстом, а <b>эта часть текста</b> выделена жирным
+            </p>
+        </div>
+
+        <div class="item">
+            <h2 class="item__title">Важные правила вложенности</h2>
+            <!-- Можно-->
+            <p>
+                <b>Так можно</b>
+            </p>
+
+            <!-- Нельзя-->
+            <b>
+                <p>Так нельзя</p>
+            </b>
+
+            <!-- Валидная разметка-->
+            <p>
+                Параграф с <b>жирным и <i>курсивным</i> текстом</b>
+            </p>
+
+            <!-- Невалидная разметка-->
+            <p>Параграф с <b>жирным и <i>курсивным</i> текстом и <p>внезапным параграфом внутри</p></b></p>
+
+        </div>
+
+        <div class="item">
+            <h2 class="item__title">Что такое семантика?</h2>
+            <h3>Я заголовок страницы</h3>
+            <button>Я кнопка</button>
+            <a href="/">Я ссылка</a>
+            <p>Я параграф</p>
+            <ul>
+                <li>Я элемент списка</li>
+                <li>Я элемент списка</li>
+                <li>Я элемент списка</li>
+                <li>Я элемент списка</li>
+                <li>Я элемент списка</li>
+            </ul>
+        </div>
+
+        <div class="item">
+            <h2 class="item__title">Теги div и span</h2>
+            <div class="div">Нейтральный блочный тег</div>
+            <span class="span">Нейтральный строчный тег</span>
+        </div>
+
+        <div class="item">
+            <h2 class="item__title">Заголовки, теги h1-h6</h2>
+            <h1>Заголовок 1-го уровня</h1>
+            <h2>Заголовок 2-го уровня</h2>
+            <h3>Заголовок 3-го уровня</h3>
+            <h4>Заголовок 4-го уровня</h4>
+            <h5>Заголовок 5-го уровня</h5>
+            <h6>Заголовок 6-го уровня</h6>
+        </div>
+
+        <div class="item">
+            <h2 class="item__title">Правила использования тега h1</h2>
+            <h1>На странице заголовок 1-го уровня должен быть единственным</h1>
+        </div>
+
+        <div class="item">
+            <h2 class="item__title">Правило последовательности заголовков</h2>
+            <section>
+                <h2>Я заголовок секции</h2>
+                <article>
+                    <h3>Я заголовок карточки товара</h3>
+                </article>
+                <article>
+                    <h3>Я заголовок карточки товара</h3>
+                </article>
+                <article>
+                    <h3>Я заголовок карточки товара</h3>
+                </article>
+            </section>
+        </div>
+
+        <div class="item">
+            <h1>Онлайн-магазин всего и вся</h1>
+            <section>
+                <h2>Каталог товаров</h2>
+                <article>
+                    <h3>Светильник "Заря"</h3>
+                </article>
+                <article>
+                    <h3>Стул "Часовой"</h3>
+                </article>
+                <article>
+                    <h3>Стакан "Малиновский"</h3>
+                </article>
+            </section>
+            <section>
+                <h2>Доставка и оплата</h2>
+                <div>
+                    <h3>Межрайонная доставка</h3>
+                    <h3>Оплата бонусами "Спасибо"</h3>
+                </div>
+            </section>
+            <section>
+                <h2>Гарантийные обязательства</h2>
+                <div>
+                    <h3>Клятва начинающего предпринимателя</h3>
+                    <h3>Отзывы от друзей</h3>
+                </div>
+            </section>
+            <section>
+                <h2>Контакты</h2>
+            </section>
+        </div>
+        <div class="item">
+            <h2 class="item__title">Параграф, тег p</h2>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet enim et, exercitationem ipsa officia
+                quos!
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi, quae!
+            </p>
+        </div>
+
+        <div class="item">
+            <h2 class="item__title">Списки, теги ul, ol, li</h2>
+            <ul>
+                <li>Я элемент маркированного списка</li>
+                <li>Я элемент маркированного списка</li>
+                <li>Я элемент маркированного списка</li>
+            </ul>
+            <ol>
+                <li>Я элемент нумерованного списка</li>
+                <li>Я элемент нумерованного списка</li>
+                <li>Я элемент нумерованного списка</li>
+            </ol>
+        </div>
+
+        <div class="item">
+            <h2 class="item__title">Правило иерархии тегов списка</h2>
+            <ul>
+                <!--       Можно             -->
+                <li>li - можно</li>
+            </ul>
+            <ul>
+                <!--       Нельзя             -->
+                <p>p нельзя</p>
+            </ul>
+            <ul>
+                Нельзя - какой-то текст без тега li
+            </ul>
+        </div>
+        <div class="item">
+            <h2 class="item__title">Что делать "списком" в разметке</h2>
+            <h3>Список дел:</h3>
+            <ul>
+                <li>Поработать</li>
+                <li>Сходить в кино</li>
+                <li>Поиграть в PS5</li>
+            </ul>
+            <h3>Рецепт "Шакшука"</h3>
+            <ol>
+                <li>Нарезать помидоры, перец, лук</li>
+                <li>Потушить на среднем огне</li>
+                <li>Добавить яйца, перец, соль</li>
+                <li>Готовить до готовности</li>
+            </ol>
+
+            <header>
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="/">Главная</a>
+                        </li>
+                        <li>
+                            <a href="/catalog">Каталог</a>
+                        </li>
+                        <li>
+                            <a href="/">Контакты</a>
+                        </li>
+                    </ul>
+                </nav>
+            </header>
+        </div>
+    </div>
+</main>
+<footer class="footer">
+    <p>Уточнение: в целях экономии места, представим, что каждый квадрат на странице, это "отдельная страница"</p>
+</footer>
+</body>
+</html>

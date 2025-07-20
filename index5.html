@@ -1,0 +1,329 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>html-course | page 5</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+<header class="header">
+    <div class="container">
+        <h1 class="title h1">HTML-course</h1>
+        <nav>
+            <ul class="menu container">
+                <li class="menu__item">
+                    <a class="menu__item-link" href="./index.html">На начало</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__item-link" href="./index2.html">2-я страница</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__item-link" href="./index3.html">3-я страница</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__item-link" href="./index4.html">4-я страница</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__item-link" href="./index5.html">5-я страница</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__item-link" href="./index6.html">6-я страница</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__item-link" href="./index7.html">7-я страница</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</header>
+<main class="main">
+    <div class="container grid">
+        <div class="item">
+            <h2 class="item__title">Тег blockquote</h2>
+            <blockquote>
+                <p>
+                    Lorem ipsum dolor sit.
+                </p>
+            </blockquote>
+            <p>Имя автора, <cite>Источник...</cite></p>
+        </div>
+        <div class="item">
+            <h2 class="item__title">Неочевидное применение тега cite</h2>
+            <p>
+                Серия книг <cite>Песнь льда и пламени</cite> автора Джорджа Мартина -
+                это целая серия романов для любителей фэнтэзи.
+            </p>
+
+            <p>
+                Для получения более подробной информации на тему предлагаем
+                ознакомится с оригиналом статьи на <cite><a href="https://www.w3.org/">сайте консорциума W3C</a></cite>
+            </p>
+            <p>
+                Легендарная работа Леонардо да Винчи <cite>Salvator Mundi</cite>, которую он предположительно
+                написал для "Отца народа" (Людовик 12), является одной из самых дорогих картин в мире,
+                проданных с аукциона.
+            </p>
+            <p>
+                Если у вас возникли вопросы, поищите ответ в разделе <cite>FAQ</cite>
+            </p>
+        </div>
+        <div class="item">
+            <h2 class="item__title">Атрибут cite</h2>
+            <blockquote cite="https://some-site.com">
+                <p>
+                    Lorem ipsum dolor sit amet.
+                </p>
+            </blockquote>
+        </div>
+        <div class="item">
+            <h2 class="item__title">Тег q</h2>
+            <p>
+                Как сказал бы Станиславский: <q cite="...">Не верю!</q>
+            </p>
+        </div>
+    </div>
+    <div class="container grid">
+        <div class="item">
+            <h2 class="item__title">Тег video</h2>
+            <div class="player">
+                <video class="player__video" src="./video/1.webm" width="480" height="270" controls muted></video>
+            </div>
+        </div>
+        <div class="item">
+            <h2 class="item__title">Тег source</h2>
+            <div class="player">
+                <video class="player__video" width="480" height="270" controls muted>
+                    <source src="./video/2.mp4" type="video/mp4">
+                    <source src="./video/2.webm" type="video/webm">
+                    <p>К сожалению, ваш браузер не поддерживает видео</p>
+                </video>
+            </div>
+        </div>
+        <div class="item">
+            <h2 class="item__title">Тег audio</h2>
+            <div class="player-audio">
+                <audio controls>
+                    <source src="./audio/483.mp3" type="audio/mp3" controls>
+                    <p>
+                        Ваш браузер не поддерживает встроенное аудио.
+                        Попробуйте <a href="./audio/483.mp3" download>скачать</a> файл
+                    </p>
+                </audio>
+
+            </div>
+        </div>
+        <div class="item">
+            <h2 class="item__title">Подключение фрейма (виджета) Яндекс карт</h2>
+            <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A4643ccf4b9d613c80fcd1edb4b6477e2607941dc4a58c8e0b44ac50350a133c4&amp;source=constructor"
+                    width="500" height="400" frameborder="0"></iframe>
+        </div>
+        <div class="item">
+            <h2 class="item__title">Подключение фрейма Youtube</h2>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/EQkN8UvpwKc?si=g2cTY_bAL7xXr3Bs"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <div class="item">
+            <h2 class="item__title">Встраивание фрейма другого сайта на свой сайт</h2>
+            <iframe src="https://aleksanderlamkov.ru" frameborder="0" width="500" height="500"></iframe>
+        </div>
+    </div>
+    <div class="container grid">
+        <div class="item">
+            <h2 class="item__title">Таблицы. Тег table, tr, td, th</h2>
+            <table>
+                <tr>
+                    <th>Имя</th>
+                    <th>№ заявки</th>
+                </tr>
+                <tr>
+                    <td>Сергей</td>
+                    <td>1001</td>
+                </tr>
+                <tr>
+                    <td>Андрей</td>
+                    <td>1200</td>
+                </tr>
+                <tr>
+                    <td>Александр</td>
+                    <td>800</td>
+                </tr>
+            </table>
+        </div>
+        <div class="item">
+            <h2 class="item__title">Таблицы. Тег caption</h2>
+            <table>
+                <caption>Расчетный лист услуг ЖКХ</caption>
+
+                <tr>
+                    <td>Холодная вода</td>
+                    <td>Куб м <sup>2</sup></td>
+                    <td>7</td>
+                    <td>1000.00</td>
+                </tr>
+                <tr>
+                    <!--                    ...-->
+                </tr>
+            </table>
+        </div>
+        <div class="item">
+            <h2 class="item__title">Таблицы. Тег thead</h2>
+            <table>
+                <caption>Расчетный лист услуг ЖКХ</caption>
+                <thead>
+                <tr>
+                    <th>Вид услуги</th>
+                    <th>Ед. изм.</th>
+                    <th>Объем</th>
+                    <th>Размер оплаты</th>
+                </tr>
+                </thead>
+                <tr>
+                    <td>Холодная вода</td>
+                    <td>Куб м <sup>2</sup></td>
+                    <td>7</td>
+                    <td>1000.00</td>
+                </tr>
+                <tr>
+                    <!--                    ...-->
+                </tr>
+            </table>
+        </div>
+        <div class="item">
+            <h2 class="item__title">Таблицы. Тег tbody</h2>
+            <table>
+                <caption>Расчетный лист услуг ЖКХ</caption>
+                <thead>
+                <tr>
+                    <th>Вид услуги</th>
+                    <th>Ед. изм.</th>
+                    <th>Объем</th>
+                    <th>Размер оплаты</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>Холодная вода</td>
+                    <td>Куб м <sup>2</sup></td>
+                    <td>7</td>
+                    <td>1000.00</td>
+                </tr>
+                <tr>
+                    <!--                    ...-->
+                </tr>
+                </tbody>
+
+            </table>
+        </div>
+        <div class="item">
+            <h2 class="item__title">Таблицы. Тег tfoot</h2>
+            <table>
+                <caption>Расчетный лист услуг ЖКХ</caption>
+                <thead>
+                <tr>
+                    <th>Вид услуги</th>
+                    <th>Ед. изм.</th>
+                    <th>Объем</th>
+                    <th>Размер оплаты</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>Холодная вода</td>
+                    <td>Куб м <sup>2</sup></td>
+                    <td>7</td>
+                    <td>1000.00</td>
+                </tr>
+                <tr>
+                    <!--                    ...-->
+                </tr>
+                </tbody>
+
+                <tfoot>
+                <tr>
+                    <td>Итого к оплате за расчетный период:</td>
+                    <td>7000.00</td>
+                </tr>
+                </tfoot>
+            </table>
+        </div>
+        <div class="item">
+            <h2 class="item__title">Таблицы. Атрибут colspan</h2>
+            <table>
+                <caption>Расчетный лист услуг ЖКХ</caption>
+                <thead>
+                <tr>
+                    <th>Вид услуги</th>
+                    <th>Ед. изм.</th>
+                    <th>Объем</th>
+                    <th>Размер оплаты</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>Холодная вода</td>
+                    <td>Куб м <sup>2</sup></td>
+                    <td>7</td>
+                    <td>1000.00</td>
+                </tr>
+                <tr>
+                    <!--                    ...-->
+                </tr>
+                </tbody>
+
+                <tfoot>
+                <tr>
+                    <td>Итого к оплате за расчетный период:</td>
+                    <td colspan="3">7000.00</td>
+                </tr>
+                </tfoot>
+            </table>
+        </div>
+        <div class="item">
+            <h2 class="item__title">Таблицы. Атрибут rowspan</h2>
+            <table>
+                <caption>Расчетный лист услуг ЖКХ</caption>
+                <thead>
+                <tr>
+                    <th rowspan="2">Вид услуги</th>
+                    <th rowspan="2">Ед. изм.</th>
+                    <th colspan="2">Объем</th>
+                    <th rowspan="2">Размер оплаты</th>
+                </tr>
+                <tr>
+                    <th>на индив. потребление</th>
+                    <th>на общедомовые нужды</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>Холодная вода</td>
+                    <td>Куб м <sup>2</sup></td>
+                    <td>3</td>
+                    <td>7</td>
+                    <td>1000.00</td>
+                </tr>
+                <tr>
+                    <!--                    ...-->
+                </tr>
+                </tbody>
+
+                <tfoot>
+                <tr>
+                    <td>Итого к оплате за расчетный период:</td>
+                    <td colspan="4">7000.00</td>
+                </tr>
+                </tfoot>
+            </table>
+        </div>
+    </div>
+</main>
+<footer class="footer">
+    <p>Уточнение: в целях экономии места, представим, что каждый квадрат на странице, это "отдельная страница"</p>
+</footer>
+</body>
+</html>
